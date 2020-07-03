@@ -1,3 +1,6 @@
+# About
+コマンドラインで数独を解くプログラムです。
+
 # インストール
 ```
 git clone https://github.com/ken109/go-nump.git
