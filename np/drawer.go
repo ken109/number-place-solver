@@ -49,7 +49,11 @@ func npPrint(np [9][9]int, question [9][9]int) {
 				green := color.New(color.FgGreen).PrintfFunc()
 				green("%s ", strconv.Itoa(col))
 			} else {
-				fmt.Printf("%s ", strconv.Itoa(col))
+				if col == 0 {
+					fmt.Printf("  ")
+				} else {
+					fmt.Printf("%s ", strconv.Itoa(col))
+				}
 			}
 			if x == 2 || x == 5 {
 				fmt.Printf("| ")
