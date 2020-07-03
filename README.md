@@ -8,7 +8,7 @@ cd go-nump
 go build
 ```
 
-# Usage
+# Example
 ```
 ./go-nump question.txt 80
 ./go-nump question2.txt 0
