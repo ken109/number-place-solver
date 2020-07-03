@@ -35,6 +35,8 @@ func Draw(txt string, delay int) {
 			npPrint(solver.History[0], solver.Question)
 			if len(solver.History) > 1 {
 				solver.History = solver.History[1:]
+			} else {
+				break
 			}
 			time.Sleep(time.Millisecond * time.Duration(delay))
 			reset()
