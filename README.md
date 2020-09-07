@@ -8,6 +8,11 @@ cd go-nump
 go build
 ```
 
+# Usage
+```
+./go-nump [問題のテキストファイル] [描画間隔(ms)]
+```
+
 # Example
 ```
 ./go-nump question.txt 80
