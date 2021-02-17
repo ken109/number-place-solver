@@ -38,10 +38,10 @@ func (board *Board) readQuestion(txt string) {
 	}
 	defer f.Close()
 	b, err := ioutil.ReadAll(f)
-	if len(strings.Split(string(b), "\n")) != 9 {
+	if len(strings.Split(strings.TrimRight(string(b), "\n"), "\n")) != 9 {
 		formatErr()
 	}
-	for i, row := range strings.Split(string(b), "\n") {
+	for i, row := range strings.Split(strings.TrimRight(string(b), "\n"), "\n") {
 		if len(strings.Split(row, "")) != 9 {
 			formatErr()
 		}
