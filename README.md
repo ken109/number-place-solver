@@ -7,8 +7,8 @@
 
 # インストール
 ```
-git clone https://github.com/ken109/number-place-solver.git
-cd number-place-solver
+git clone https://github.com/ken109/sudoku-go.git
+cd sudoku-go
 ```
 
 # Usage

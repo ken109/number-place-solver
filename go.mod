@@ -1,4 +1,4 @@
-module github.com/ken109/go-nump
+module github.com/ken109/sudoku-go
 
 go 1.14
 

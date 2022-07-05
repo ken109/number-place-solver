@@ -1,10 +1,11 @@
 package main
 
 import (
-	"github.com/fatih/color"
-	"github.com/ken109/go-nump/np"
 	"os"
 	"strconv"
+
+	"github.com/fatih/color"
+	"github.com/ken109/sudoku-go/np"
 )
 
 func main() {
@@ -13,6 +14,7 @@ func main() {
 		color.Green("Example: nump question.txt 50")
 		os.Exit(1)
 	}
+
 	delay, err := strconv.Atoi(os.Args[2])
 	if err != nil {
 		color.Red("ディレイの値が正しくありません。")
